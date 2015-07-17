@@ -16,14 +16,14 @@ La información y ejemplos estan basados en la documentacion oficial provisto po
 __HTML 5__
 
 ```HTML
-	<!DOCTYPE html>
+<!DOCTYPE html>
 ```
 __HTML 4.01 Strict__
 
 _Esta delaración contiene todos los atributos y elementos de HTML, pero NO INCLUYE los elementos descontinuados y de representación (como font). Los Frameset no estan permitidos._
 
 ```HTML
-		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
 						"http://www.w3.org/TR/html4/strict.dtd">
 ```
 
@@ -33,7 +33,7 @@ __HTML 4.01 Transitional__
 _Esta delaración contiene todos los atributos y elementos de HTML, pero INCLUYE los elementos descontinuados y de representación (como font). Los Frameset no estan permitidos._
 
 ```HTML
-		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
 						"http://www.w3.org/TR/html4/loose.dtd">
 ```
 
@@ -43,7 +43,7 @@ __HTML 4.01 Frameset__
 _Esta declaración es igual a HTML 4.01 Transitional, pero permite el uso de framesets._
 
 ```HTML
-		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" 
 					"http://www.w3.org/TR/html4/frameset.dtd">
 ```
 
@@ -53,7 +53,7 @@ __XHTML 1.0 Strict__
 _Esta delaración contiene todos los atributos y elementos de HTML, pero NO INCLUYE los elementos descontinuados (como font). Los Frameset no estan permitidos. Este doctype permite escribir el contenido en XML correctamente formado._
 
 ```HTML
-		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
 					"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 ```
 
@@ -63,7 +63,7 @@ __XHTML 1.0 Transitional__
 _Esta delaración contiene todos los atributos y elementos de HTML, INCLUDING presentational and deprecated elements (como font). Los Frameset no estan permitidos. Este doctype permite escribir el contenido en XML correctamente formado._
 
 ```HTML
-		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 					"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 ```
 
@@ -73,7 +73,7 @@ __XHTML 1.0 Frameset__
 _Esta declaración es igual a XHTML 1.0 Transitional, pero permite el uso de framesets._
 
 ```HTML
-		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
 					"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
 ```
 
@@ -83,7 +83,7 @@ __XHTML 1.1__
 _Esta declaración es igual a XHTML 1.0 Strict, pero te permite añadir módulos (por ejemplo para poveer soporte a ruby para lenguajes del este Asiático)._
 
 ```HTML
-		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
 					"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 ```
 
