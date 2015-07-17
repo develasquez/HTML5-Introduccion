@@ -1,13 +1,14 @@
+![HTML5](https://github.com/develasquez/HTML5-Introduccion/blob/master/html5-topper.png?raw=true)
 # Temario
 
 ## HTML
 
-* [Doctype](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md)
+* [Doctype](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md#doctype)
 	+ HTML Estricto
 	+ Xhtml
 	+ Html5 Doctype
 
-* [Meta Tags](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md)
+* [Meta Tags](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md#meta-tags)
 	+ Lang
 	+ Charset
 	+ Viewport
@@ -15,15 +16,15 @@
 	+ MobileOptimized
 	+ mobile-web-app-capable
 
-* [Boilerplate](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md)
+* [Boilerplate](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md#boilerplate)
     + Descargar y entender.
 
-* [Sublime + Zen Koding / Emmet](https://github.com/develasquez/HTML5-Introduccion/blob/master/02.1%20-%20Sublime%20Text.md)
+* [Sublime + Zen coding / Emmet](https://github.com/develasquez/HTML5-Introduccion/blob/master/02.1%20-%20Sublime%20Text.md)
     + Cheatcheet
 	+ Snippets
     + Como crear Mi código Favorito
 
-* [HTML Semántico](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md)
+* [HTML Semántico](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md#html-semántico)
 
 * [Inputs](https://github.com/develasquez/HTML5-Introduccion/blob/master/03%20-%20HTML5_Forms.md)
 

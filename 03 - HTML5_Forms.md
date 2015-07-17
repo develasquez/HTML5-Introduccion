@@ -10,14 +10,6 @@ Los formularios son uno de los elementos que más cambios han sufrido en lo que 
 
 ### Inputs
 
-__ATRIBUTOS__
-	
-> __placeholder__ ="" : Establece el texto de ayuda o guía para el campo
-
-> __readonly__ : Establece el campo como de solo lectura
-
-> __required__ : Establece el campo como obligatorio
-
  **Teléfono** _(type=tel)_
 
 ```HTML
@@ -84,3 +76,12 @@ __ATRIBUTOS__
 ```HTML
 	<input type="reset">
 ```
+
+__ATRIBUTOS__
+	
+> __placeholder__ ="" : Establece el texto de ayuda o guía para el campo
+
+> __readonly__ : Establece el campo como de solo lectura
+
+> __required__ : Establece el campo como obligatorio
+
