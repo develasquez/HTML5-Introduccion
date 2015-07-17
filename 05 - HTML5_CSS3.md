@@ -9,7 +9,7 @@ Cunando queremos aplicar un determinado estilo a uno o mas elementos debemos lle
 
 + __Por tipo__ : Podemos llegar al elemento mediante su tipo HTML, input , div, p, section, etc...
 
-```HTML
+```CSS
 	input{
 		border-color:blue;
 	}
