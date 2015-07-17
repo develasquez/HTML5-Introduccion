@@ -160,7 +160,7 @@ Es un template para nuestros proyectos en HTML5, implementa las mejores practica
 
 Busca este editor, que te va a ayudar mucho , [Sublime Text 2](https://github.com/develasquez/HTML5-Introduccion/blob/master/02.1%20-%20Sublime%20Text.md)
 
-HTML Semántico
+## HTML Semántico
 	
 * __body__: Es el Cuerpo de nuestro documento
 * __article__: Especifica contenido de texto es utilizado comunmente en:

@@ -2,12 +2,12 @@
 
 ## HTML
 
-* Doctype
+* [Doctype](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md)
 	+ HTML Estricto
 	+ Xhtml
 	+ Html5 Doctype
 
-* Meta Tags
+* [Meta Tags](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md)
 	+ Lang
 	+ Charset
 	+ Viewport
@@ -15,20 +15,19 @@
 	+ MobileOptimized
 	+ mobile-web-app-capable
 
-* Boilerplate 
+* [Boilerplate](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md)
     + Descargar y entender.
 
-* Zen Koding / Emmet
+* [Sublime + Zen Koding / Emmet](https://github.com/develasquez/HTML5-Introduccion/blob/master/02.1%20-%20Sublime%20Text.md)
     + Cheatcheet
-
-* Snippets
+	+ Snippets
     + Como crear Mi código Favorito
 
-* HTML Semántico
+* [HTML Semántico](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md)
 
-* Inputs
+* [Inputs](https://github.com/develasquez/HTML5-Introduccion/blob/master/03%20-%20HTML5_Forms.md)
 
-* Audio y Video
+* [Audio y Video](https://github.com/develasquez/HTML5-Introduccion/blob/master/04%20-%20HTML5_Audio_Video.md)
 
 * Consideraciones Móviles
 	+ Meta Tags
