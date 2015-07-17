@@ -56,35 +56,35 @@ Cunando queremos aplicar un determinado estilo a uno o mas elementos debemos lle
 
 * __Por Atributo__: Es posible llegar a un elemento mediante alguno de sus atributos, para ello se debe especificar el stributo entre corchetes '[type="email"]'
 
-```CSS
-	input[type="email"]{
-		border-color:red;
-	}
-	a[href*="tecnova"]:link{
-		color: green;
-	}
-```
+	```CSS
+		input[type="email"]{
+			border-color:red;
+		}
+		a[href*="tecnova"]:link{
+			color: green;
+		}
+	```
 
 * __Por Otros medios__: 
 	
 	+ __:contains__ : Selecciona elementos que contenga el texto indicado.
 
-```CSS
-	p:contains("HTML"){
-		....
-	}
-```
+	```CSS
+		p:contains("HTML"){
+			....
+		}
+	```
 
 	+ __:First__ : Es posible obtener el primero de los elementos que coincidan con algun criterio de selectores.
 
-```CSS
-	.entradas:first{
-		width:100%;
-		margin:1em;
-		border : solid 1px #ccc;
-		border-radious: 8px;
-	}
-```	
+	```CSS
+		.entradas:first{
+			width:100%;
+			margin:1em;
+			border : solid 1px #ccc;
+			border-radious: 8px;
+		}
+	```	
 
 
 	+ __:Last__ : Aplica de la misma forma que __:first__
