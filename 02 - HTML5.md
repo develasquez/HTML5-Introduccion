@@ -113,15 +113,15 @@ _Podemos establecer el icono que tendra nuestra web cuando la guarden como acces
 
 HTML Semántico
 	
-__body__
-__article__
-__section__
-__nav__
-__aside__
-__h1, h2, h3, h4, h5, and h6__
-__header__
-__footer__
-__address__
+* __body__: 
+* __article__:
+* __section__:
+* __nav__:
+* __aside__:
+* __h1, h2, h3, h4, h5, and h6__:
+* __header__:
+* __footer__:
+* __address__:
 
 	<article itemscope itemtype="http://schema.org/BlogPosting">
 	 <header>
