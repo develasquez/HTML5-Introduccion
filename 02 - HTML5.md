@@ -140,7 +140,7 @@ Este no posee un largo en caracteres definido , sin embargo los motores de búsq
 
 ## Elementos Utiles
 
-_Podemos establecer el icono que tendra nuestra web cuando la guarden como acceso directo desde el launcher del dispositivo.
+_Podemos establecer el icono que tendra nuestra web cuando la guarden como acceso directo desde el launcher del dispositivo._
 
 ```HTML
 	<link rel="apple-touch-icon" href="apple-touch-icon-iphone.png">
@@ -212,14 +212,15 @@ Busca este editor, que te va a ayudar mucho , [Sublime Text 2](https://github.co
 	</article>
 ```
 
-## Inputs
+## Inputs 
 
-para esto hice una seccion especial , [Froms](https://github.com/develasquez/HTML5-Introduccion/blob/master/03%20-%20HTML5_Forms.md)
+* para esto hice una seccion especial , [Froms](https://github.com/develasquez/HTML5-Introduccion/blob/master/03%20-%20HTML5_Forms.md)
 
-## Consideraciones Móviles
-	* Meta Tags
-	* No Usar Tablas
-	* Framework
-	* JQuery Mobile
-	* Ionic
-	* Mobile Boilerplate
+### Consideraciones Móviles
+	* Meta Tags (ya los vimos)
+	* No Usar Tablas (Sistemas de Grds, display Inline Block, como los machos)
+	* Frameworks
+		+ [JQuery Mobile](https://jquerymobile.com/)
+		+ [Ionic](http://ionicframework.com/)
+		+ [monomer](https://github.com/develasquez/monomer)
+	* [Mobile Boilerplate](https://html5boilerplate.com/mobile/)

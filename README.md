@@ -1,7 +1,7 @@
 ![HTML5](https://github.com/develasquez/HTML5-Introduccion/blob/master/html5-topper.png?raw=true)
 # Temario
 
-## HTML
+## [HTML](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md)
 
 * [Doctype](https://github.com/develasquez/HTML5-Introduccion/blob/master/02%20-%20HTML5.md#doctype)
 	+ HTML Estricto
@@ -53,7 +53,7 @@
 	+ >
 	+ :Focus
 
-* MODELO DE CAJA
+* Modelo de Caja
 	+ Border
 	+ Padding
 	+ Margin
@@ -87,6 +87,8 @@
 	+ Bootstrap
 	+ Ingrid
 	+ Otros 
+
+	
 ## JAVASCRIPT
 
 * Geo Localización
