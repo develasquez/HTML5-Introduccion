@@ -6,6 +6,8 @@ CSS es el mecanismo mediante el cual añadimos etilos visuales al documento. La 
 # Selectores
 
 Cunando queremos aplicar un determinado estilo a uno o mas elementos debemos llegar a estos mediante selectores.
+Puedes verlos todos en la web de la [W3C](http://www.w3.org/TR/css3-selectors/#selectors)
+
 
 * __Por tipo__ : Podemos llegar al elemento mediante su tipo HTML, input , div, p, section, etc...
 
@@ -54,7 +56,7 @@ Cunando queremos aplicar un determinado estilo a uno o mas elementos debemos lle
 	}
 ```
 
-* __Por Atributo__: Es posible llegar a un elemento mediante alguno de sus atributos, para ello se debe especificar el stributo entre corchetes '[type="email"]'
+* __Por Atributo__: Es posible llegar a un elemento mediante alguno de sus atributos, para ello se debe especificar el stributo entre corchetes [type="email"]
 
 	```CSS
 		input[type="email"]{
@@ -75,10 +77,10 @@ Cunando queremos aplicar un determinado estilo a uno o mas elementos debemos lle
 		}
 	```
 
-	+ __:First__ : Es posible obtener el primero de los elementos que coincidan con algun criterio de selectores.
+	+ __:first-child__ : Es posible obtener el primero de los elementos que coincidan con algun criterio de selectores dentro del padre.
 
 	```CSS
-		.entradas:first{
+		.entradas:first-child{
 			width:100%;
 			margin:1em;
 			border : solid 1px #ccc;
@@ -87,13 +89,53 @@ Cunando queremos aplicar un determinado estilo a uno o mas elementos debemos lle
 	```	
 
 
-	+ __:Last__ : Aplica de la misma forma que __:first__
+	+ __:last-child__ : Aplica de la misma forma que __:first-child__, para seleccionar el último elemento dentro del padre.
 
-* Odd
-* Even
-* 
+	+ __:nth-child > 1,2, ...,  Odd / Even__ : 
+
+	```CSS
+		li:nth-child(odd) {
+		    background: #CCCCCC;
+		    color: #fff;
+		}
+
+		li:nth-child(even) {
+		    background: #A2A2A2;
+		    color: #000;
+
+		}
+
+		li:nth-child(1) {
+		    background: #000;
+		    color: #fff;
+
+		}
+	```
+	+ __::before, ::after__ : Generan un pseudo elemento antes o despues (respectivamente) del elemento seleccionado, a este pseudo elemento se le aplicaran los estilos indicados.
+	```CSS
+		.comentario::after{
+			width:16px;
+			height:16px;
+			background-image:url("colaDeComentatio.png");
+		}
+	```
+	+ __:focus__: Este selector se ejecuta cuando el elemento en cuestion obtiene el foco.
+	
+	```CSS
+		.btn:focus{
+			background-color:#A2A2A2;
+		}	
+	```
+	+ __:hover__: Este selector se ejecuta cuando el mouse pasa sobre el elemento en cuestion.
+	
+	```CSS
+		.articulo:hover{
+			background-color:#D1D1D1;
+		}	
+	```
+	+ __Conjunción de selectores (+)__: 
 * >
-* :Focus
+
 
 * Modelo de Caja
 * Border
