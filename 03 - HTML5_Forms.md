@@ -10,7 +10,7 @@ Los formularios son uno de los elementos que más cambios han sufrido en lo que 
 
 ### Inputs
 
-`ATRIBUTOS`
+__ATRIBUTOS__
 	
 > __placeholder__ ="" : Establece el texto de ayuda o guía para el campo
 
