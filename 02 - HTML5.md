@@ -15,21 +15,28 @@ La información y ejemplos estan basados en la documentacion oficial provisto po
 
 __HTML 5__
 
+```HTML
 	<!DOCTYPE html>
-
+```
 __HTML 4.01 Strict__
 
 _Esta delaración contiene todos los atributos y elementos de HTML, pero NO INCLUYE los elementos descontinuados y de representación (como font). Los Frameset no estan permitidos._
 
-	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+```HTML
+		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
 						"http://www.w3.org/TR/html4/strict.dtd">
+```
+
 
 __HTML 4.01 Transitional__
 
 _Esta delaración contiene todos los atributos y elementos de HTML, pero INCLUYE los elementos descontinuados y de representación (como font). Los Frameset no estan permitidos._
 
-	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+```HTML
+		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
 						"http://www.w3.org/TR/html4/loose.dtd">
+```
+
 
 __HTML 4.01 Frameset__
 
