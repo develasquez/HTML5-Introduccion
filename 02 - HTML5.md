@@ -154,7 +154,7 @@ _Podemos establecer el icono que tendra nuestra web cuando la guarden como acces
 
 ## Boilerplate 
 	
-Es un template para nuestros proyectos en HTML5, implementa las mejores practicar en lo que respecta a la estrucura del HTML, incorpora un reset.css que establece el estido de los controles para todos los navegadores (Para no tener sorpresas entre navegadoers.) <a href="https://html5boilerplate.com/">Sitio Oficial</a> 
+Es un template para nuestros proyectos en HTML5, implementa las mejores practicar en lo que respecta a la estrucura del HTML, incorpora un reset.css que establece el estido de los controles para todos los navegadores (Para no tener sorpresas entre navegadoers.) <a href="https://html5boilerplate.com/" target="_blank">Sitio Oficial</a> 
 
 ## Sublime text 2
 
