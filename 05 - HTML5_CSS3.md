@@ -5,25 +5,23 @@ CSS es el mecanismo mediante el cual añadimos etilos visuales al documento. La 
 
 # Selectores
 
-	Cunando queremos aplicar un determinado estilo a uno o mas elementos debemos llegar a estos mediante selectores.
+Cunando queremos aplicar un determinado estilo a uno o mas elementos debemos llegar a estos mediante selectores.
 
-	+ __Por tipo__ : Podemos llegar al elemento mediante su tipo HTML, input , div, p, section, etc...
++ __Por tipo__ : Podemos llegar al elemento mediante su tipo HTML, input , div, p, section, etc...
 
-	```HTML
-		input{
-			border-color:blue;
-		}
-
-		p{
-			padding:1em;
-			color: #a2a2a2;
-			font-style:italic;
-		}
-
-		h1, h2, h3 {
-			margin:5px;
-		}
-	```
+```HTML
+	input{
+		border-color:blue;
+	}
+	p{
+		padding:1em;
+		color: #a2a2a2;
+		font-style:italic;
+	}
+	h1, h2, h3 {
+		margin:5px;
+	}
+```
 
 	+ Por Clase
 	+ Por Id
