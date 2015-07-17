@@ -38,55 +38,55 @@
 	+ Ionic
 	+ Mobile Boilerplate
 
-CSS3
-Selectores
-Por tipo
-Por Clase
-Por Id
-Por Atributo
-Por Otros medios
-:First
-:Last
-Odd
-Even
-+
->
-:Focus
-MODELO DE CAJA
-Border
-Padding
-Margin
-Display
-Box-sizing
-Unidades de Medida
-%
-Px
-Em
-Rem
-Bordear-radious
-Box-shadow
-Text-shadow
-Transform
-Transiciones
-Animations
-Key Frases
-Gradientes
-Font Faces
-Media Querys
- Mas populares
-Portrait
-Land Scape
-320
-480
-720
-1024
-Print
-Pre Procesadores Css
-Grid Sistemas
-Bootstrap
-Ingrid
-Otros 
-JAVASCRIPT
-Geo Localización
-Local y Sesión Storage
-Web SQL
+## CSS3
+* Selectores
++Por tipo
++Por Clase
++Por Id
++Por Atributo
++Por Otros medios
++:First
++:Last
++Odd
++Even
+++
++>
++:Focus
+*MODELO DE CAJA
++Border
++Padding
++Margin
++Display
++Box-sizing
+*Unidades de Medida
++%
++Px
++Em
++Rem
+*Bordear-radious
+*Box-shadow
+*Text-shadow
+*Transform
+*Transiciones
+*Animations
+*Key Frases
+*Gradientes
+*Font Faces
+*Media Querys
++ Mas populares
++Portrait
++Land Scape
++320
++480
++720
++1024
++Print
+*Pre Procesadores Css
+*Grid Sistemas
++Bootstrap
++Ingrid
++Otros 
+## JAVASCRIPT
+*Geo Localización
+*Local y Sesión Storage
+*Web SQL
