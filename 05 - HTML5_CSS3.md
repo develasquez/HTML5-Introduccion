@@ -9,7 +9,7 @@ CSS es el mecanismo mediante el cual añadimos etilos visuales al documento. La 
 
 	+ __Por tipo__ : Podemos llegar al elemento mediante su tipo HTML, input , div, p, section, etc...
 
-	```CSS
+	```HTML
 		input{
 			border-color:blue;
 		}
