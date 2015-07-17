@@ -15,25 +15,32 @@ EL tag audio es utilizado para embeber contenido de tipo audio en un documento H
 
 ### Autoplay
 
+```HTML
 	<!-- Audio simple auto iniciadble-->
 	<audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" autoplay>
 	  Tu navegador no soporta el elemento Audio.
 	</audio>
+```
 
 ### Tracks
 
+```HTML
 	<!-- Reproduccion de audio con titulos -->
 	<audio src="foo.ogg">
 	  <track kind="captions" src="foo.en.vtt" srclang="en" label="English">
 	  <track kind="captions" src="foo.sv.vtt" srclang="sv" label="Svenska">
 	</audio>
+```
 
 ### Sources
 
+```HTML
 	<audio controls="controls">
   		Tu navegador no soporta el elemento Audio.
   		<source src="foo.wav" type="audio/wav">
 	</audio>
+```
+
 ## Atributos
 
 * __autoplay__ : Si se especifica en true el audio se reproducirá automaticamente.
@@ -81,19 +88,22 @@ EL tag audio es utilizado para embeber contenido de tipo audio en un documento H
 
 EL tag video es utilizado para embeber contenido de tipo audio en un documento HTML, este puede soportar una gran cantidad de origenes de audio, representados por el atributo "src" o por multiples tags &lt;source&gt;
 
+```HTML
 	<!-- Ejemplo de video sencillo -->
 	<video src="videofile.ogg" autoplay poster="posterimage.jpg">
 	  Lo sentimos tu navegador no soporta video nativo en HTML5, 
 	  pero no te preocupes lo puedes <a href="videofile.ogg">descargar</a>
 	  podras verlo en tu reproductor favorito!
 	</video>
+```
 
+```HTML
 	<!-- Video con subtitlos -->
 	<video src="foo.ogg">
 	  <track kind="subtitles" src="foo.en.vtt" srclang="en" label="English">
 	  <track kind="subtitles" src="foo.sv.vtt" srclang="sv" label="Svenska">
 	</video>
-
+```
 ### Atributos
 	
 * __autoplay__ : Si se especifica en true el audio se reproducirá automaticamente.
