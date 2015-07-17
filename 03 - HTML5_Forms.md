@@ -38,7 +38,7 @@ Los formularios son uno de los elementos que más cambios han sufrido en lo que 
  **E-mail**  _(type=email)_
 
 ```HTML
-	<input type="email" name="address" placeholder="felipe.velasquez@tecnova.cl">
+	<input type="email" name="address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="mi@email.cl">
 ```	
 
  **Date**  _(type=date)_
