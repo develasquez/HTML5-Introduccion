@@ -123,6 +123,7 @@ HTML Semántico
 * __footer__:
 * __address__:
 
+```HTML
 	<article itemscope itemtype="http://schema.org/BlogPosting">
 	 <header>
 	  <h1 itemprop="headline">The Very First Rule of Life</h1>
@@ -156,6 +157,8 @@ HTML Semántico
 	  </article>
 	 </section>
 	</article>
+```HTML
+
 Inputs
 Meta data
 Boilerplate 
