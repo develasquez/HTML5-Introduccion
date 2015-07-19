@@ -136,8 +136,10 @@ Puedes verlos todos en la web de la [W3C](http://www.w3.org/TR/css3-selectors/#s
 	+ __Conjunción de selectores (+)__: 
 * >
 
-
 * Modelo de Caja
+
+![modelo de caja](https://raw.githubusercontent.com/develasquez/HTML5-Introduccion/master/modelo_caja.png)
+
 * Border
 * Padding
 * Margin
