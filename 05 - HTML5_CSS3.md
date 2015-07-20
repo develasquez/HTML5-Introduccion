@@ -243,8 +243,8 @@ __Padding__: El Acorchado o relleno del elememento es lo que separa el borde del
 
 |Chrome		|Safari		|Firefox	|Opera			|IE				|Android	|iOS		|
 |---		|---		|---		|---			|---			|---		|---		|
-|21+ (new) 	|3.1+ (old) | 2-21 (old)| 12.1+ (new) 	|10 (tweener) 	|2.1+ (old) | 3.2+ (old)|
-|20- (old) 	|6.1+ (new) | 22+ (new) | 				|11+ (new) 		|4.4+ (new) | 7.1+ (new)|
+|20- (old) 	|3.1+ (old) | 2-21 (old)| 12.1+ (new) 	|10 (tweener) 	|2.1+ (old) | 3.2+ (old)|
+|21+ (new) 	|6.1+ (new) | 22+ (new) | 				|11+ (new) 		|4.4+ (new) | 7.1+ (new)|
 
 
 ## Unidades de Medida
@@ -349,17 +349,28 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 		transform: scale(1.5) rotate(128deg) translateX(25px) translateY(-60px) skewX(25deg) skewY(-6deg);
 	}
 ```
-* __Transitions__: Este atributo permite establecer la animación que se realizará al cambiar un determinado atributo del elemento, es decir 
+* __Transitions__: Este atributo permite establecer la animación que se realizará al cambiar un determinado atributo del elemento, es decir, se establece un atributo (o todos usando _all_) el tiempo de duración de la animación y la cuarva de ejecución de la animación. 
 	
 	```CSS
 		.animacion{
-			-webkit-transition: all 1000ms ease-in-out;
-			-moz-transition: all 1000ms ease-in-out;
-			-ms-transition: all 1000ms ease-in-out;
-			-o-transition: all 1000ms ease-in-out;
-			transition: all 1000ms ease-in-out;
+			-webkit-transition: width 1000ms ease-in-out;
+			-moz-transition: width 1000ms ease-in-out;
+			-ms-transition: width 1000ms ease-in-out;
+			-o-transition: width 1000ms ease-in-out;
+			transition: width 1000ms ease-in-out;
 		}
 	```
+
+|Animación|	Descripción|
+|ease|	Valor por defecto. especifica una animación que inicia suvemente luego rapido y termina lentamente.(equivale a cubic-bezier(0.25,0.1,0.25,1))|
+|linear|	especifica una animación que conserva la misma velocidad de principio a fin (equivalen a cubic-bezier(0,0,1,1))|
+|ease-in|	especifica una animación que inicia lentamente (equivalent to cubic-bezier(0.42,0,1,1))|
+|ease-out|	especifica una animación que termina lentamente (equivalent to cubic-bezier(0,0,0.58,1))|
+|ease-in-out|	especifica una animación que inicia y termina lentamente (equivalent to cubic-bezier(0.42,0,0.58,1))|
+|cubic-bezier(n,n,n,n)|	puedes defnir tus propios valores de velocidad con cubic-bezier. los valores posibles van entre 0.0 y 1.0|
+|initial|	Establece esta propiedad segun el valor por defecto para el navegador|
+|inherit|	Establece el valor segun lo tenga establecido si elemento padre|
+
 
 * Animations
 * Key Frames
