@@ -3,6 +3,24 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<style>
+			.flex{
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-flow: row wrap;
+				justify-content: space-around;
+			}
+			.item{
+				width: 33.333%;
+				/* Optional */
+				height: 150px;
+				min-width: 150px;
+				background: tomato;
+			}	
+		</style>
 	</head>
 	<body>
 		<header>
@@ -63,6 +81,35 @@
 				<p>Resp</p>
 			</article>
 		</section>
+		<div class="flex">
+			<div class="item">
+				Hola
+			</div>
+			<div class="item">
+				Hola
+			</div>
+			<div class="item">
+				Hola
+			</div>
+			<div class="item">
+				Hola
+			</div>
+			<div class="item">
+				Hola
+			</div>
 
+			<div class="item">
+				Hola
+			</div>
+			<div class="item">
+				Hola
+			</div>
+			<div class="item">
+				Hola
+			</div>
+			<div class="item">
+				Hola
+			</div>
+		</div>
 	</body>
 </html>
