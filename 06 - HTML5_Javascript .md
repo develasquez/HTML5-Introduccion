@@ -1,5 +1,42 @@
 # Javascript HTML5
 
+## Por que Javascript?
+
+Muchos al pensae que hablamos de html 5 piensan que no es  necesario aprender javascript sin embargo, el potencial mas grande de esta tecnologia senobtiene utilizando las tes herramientas.
+
+## Que es Js?
+
+Javasript es un lenguaje de scripting creado en 1995 por netscape, el cual permite interactuar con nuestra pagina mediante el DOM , Document Object Model, que es la representacion de todos los elementos del documento como objetos javascript.
+
+Sin embargo javascript dejo de ser un lenguaje 100% para la web, y debido a su versatilidad y facilidad de implementación hoy es utilizado para un sin numero de plataformas. Tenemos javascript en la web del lado del cliente, javascript del lado del servidor como php, C#, js corre del lado del servidor con __Node.js__, sive para desarrollar aplicaciones nativas para dispositivos moviles, desarrollar aplicaciones para Smart Watchs, Smart TVs, Drones, robots, refrigerdores, etc...
+
+por lo tanto nos conviene prestarle mucha atención a Javascript, que es el segun Stack Overflow, el lenguaje más consultado durante el 2014.
+
+## Conceptos basicos Js.
+
+Anyes de meter las manos en las nuevas funcionalidades, es necesario, repasar algunos conceptos basicos de js.
+
+1. Para asociar un archivo js a un documento Html, debemos utilizar la etiqueta &lt;script&gt; 
+2. 
+## Nuevo en HTML 5
+
+Algunas de las nuevas funcionalidades de HTML 5 son:
+
+
+
+### Storage
+
+Antes de Html 5 la única forma que teniamos de almacenar infrormación en el navegador del cliente eran las tan odiadas cookies, las cuales son muy limitadas, ya que solo pueden almacenar 4kb de información cada una. 
+
+#### Key-value storage
++ Session Storage
++ Local Storage
+#### Database storage
++ IndexedDB
++ Objectstore Blob support
++ Objectstore ArrayBuffer support
++ Web SQL Database : (_The Web SQL Database specification is no longer being updated and has been replaced by IndexedDB. Because at least 3 vendors have shipped implementations of this specification we still include it in this test_).
+
 Geolocation
 Device Orientation
 Device Motion
@@ -65,16 +102,6 @@ Basic socket communication
 ArrayBuffer and Blob
 
 
-###Storage
-
-#### Key-value storage
-+ Session Storage
-+ Local Storage
-#### Database storage
-+ IndexedDB
-+ Objectstore Blob support
-+ Objectstore ArrayBuffer support
-+ Web SQL Database : (_The Web SQL Database specification is no longer being updated and has been replaced by IndexedDB. Because at least 3 vendors have shipped implementations of this specification we still include it in this test_).
 
 ### User interaction
 

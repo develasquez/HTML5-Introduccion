@@ -186,23 +186,40 @@ __Padding__: El Acorchado o relleno del elememento es lo que separa el borde del
 ```
 
 * Display
+	+ __inline-block__: El valor para display de los elementos div, Section, ul y otros similares es __block__ lo que genera que el elemento utilice por defecto el 100% del ancho del documento, en lo que respecta a su espacio de ubicación, a pesar de que se establece un width menor. Utilizando __display__:_inline-block_; es posible establecer que el elemento utilice solo el width establecido alineandose con los demas elementos que contengan esta propiedad en caso que estos caigan en el ancho del documento.   
+
+	Como dato especial, los elementos con __display__:_inline-block_; poseen un espacio de 1px a su alrededor lo que provoca que si estableces 50% para cada uno los elementos no se mantiene en la misma linea, existen distintas tecnicas para eliminar este espacio, una de ellas es poner un &lt;!-- Comentario --&gt; entre ellos.
+
+	```HTML
+		<div class="inline_block_content">
+			<div class="inline_block">
+				Hola 1
+			</div><!--
+			--><div class="inline_block">
+				Hola 2
+			</div><!--
+			--><div class="inline_block">
+				Hola 3
+			</div>
+		</div>
+	```
 
 	+ __flex__ : El modulo de diseño Flexbox tiene como objetivo proveer una via mas eficiante para el diseño del layout en el documento, alinear y distribuir espacios entre los items en el contenedor, incluso cuando su tamaño es desconocido o dinamico , por eso el nombre flex.
 
-```HTML
-	<div class="flex">
-		<div class="item">
-			Hola 1
+	```HTML
+		<div class="flex">
+			<div class="item">
+				Hola 1
+			</div>
+			<div class="item">
+				Hola 2
+			</div>
+			<div class="item">
+				Hola 3
+			</div>
 		</div>
-		<div class="item">
-			Hola 2
-		</div>
-		<div class="item">
-			Hola 3
-		</div>
-	</div>
-```
-```CSS
+	```
+	```CSS
 		.flex{
 			display: -webkit-box;
 			display: -moz-box;
@@ -214,15 +231,13 @@ __Padding__: El Acorchado o relleno del elememento es lo que separa el borde del
 		}
 		.item{
 			width: 33.333%;
-			
+				
 			/* Optional */
 			height: 150px;
 			min-width: 150px;
 			background: tomato;
 		}
-```
-
-
+	```
 
 
 
@@ -244,11 +259,108 @@ Esta unidad de medida es muy util para dimencionar elementos que se visualizaran
 
 + __Rem__: Root Ems (Nuevo en css3), tiene la misma lógica que los __Em__, sin embargo su tamaño relativo se establece tomando en concideración el tamaño de la fuente principal del documento.
 
-* Bordear-radious
-* Box-shadow
-* Text-shadow
-* Transform
-* Transiciones
+## Nuevos Atributos.
+
+* __Bordear-radious__: Esta nueva funcionalidad permite establecer bordes redondeados a los elementos que utilizan el modelo de caja.
+
+```CSS
+	.caja{
+		border-radius: 16px;
+		border: solid 4px lime;
+
+		padding: 1em;
+		box-sizing: border-box;
+	}
+```
+Tambien esta propiedad nos sirve para crear elementos circulares.
+
+```CSS
+	.btnBkn{
+		border-radius: 50%;
+		width: 64px;
+		height: 64px;
+		background-color: red;
+		text-align: center;
+		line-height: 2em;
+		color: white;
+		font-size: 2em;
+		font-weight: bold;
+	}
+```
+* __Box-shadow__ : Esta propiedad permite establecer sombras a los elementos que utilizan el modelo de caja, el uso de este atrubuto consta de 4 valores.
+1. Color
+2. Posición la derecha
+3. Posición a la izquierda
+4. Difuminación
+
+```CSS
+	.btnBknShadow{
+		box-shadow: #A2A2A2 2px 3px 5px;
+	}
+```
+
+* __Text-shadow__: Esta propiedad permite establecer sombra al texto contenido en el elemento, 
+
+```CSS
+	h1.txtCool{
+		text-shadow: #04F 2px 2px 3px;
+	}
+```
+* __Transform__ : Este atributo es muy poderoso, ya que permite transformar en muchos aspectos un elemento, las posibilidades son:
+1. Scale: Permite cambiar la escala del elemento, Valores entre 0.0 , 1.0 (Valor 100%) o más.
+2. Rotate: Permite rotal el elemento en los 365 grados, valor de tipo __deg__.
+3. Translate: Permite trasladar en los cuatro sentidos se deben establecer 2 valores &lt;derecha&gt;px &lt;altura&gt;px 
+4. Skew: Permite establecer la inclinación del elemento expresada en grados con valor valor de tipo __deg__.
+
+```CSS
+	.zoom_1_5{
+		-moz-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		transform: scale(1.5);
+	}
+	.grados45{
+		-moz-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.desplazar{
+		-moz-transform: translateX(-50px) translateY(18px);
+		-webkit-transform: translateX(-50px) translateY(18px);
+		-o-transform: translateX(-50px) translateY(18px);
+		-ms-transform: translateX(-50px) translateY(18px);
+		transform: translateX(-50px) translateY(18px);
+	}
+	.enchular{
+		-moz-transform: skewX(25deg) skewY(-6deg);
+		-webkit-transform: skewX(25deg) skewY(-6deg);
+		-o-transform: skewX(25deg) skewY(-6deg);
+		-ms-transform: skewX(25deg) skewY(-6deg);
+		transform: skewX(25deg) skewY(-6deg);
+	}
+	.toditos{
+		-moz-transform: scale(1.5) rotate(128deg) translateX(25px) translateY(-60px) skewX(25deg) skewY(-6deg);
+		-webkit-transform: scale(1.5) rotate(128deg) translateX(25px) translateY(-60px) skewX(25deg) skewY(-6deg);
+		-o-transform: scale(1.5) rotate(128deg) translateX(25px) translateY(-60px) skewX(25deg) skewY(-6deg);
+		-ms-transform: scale(1.5) rotate(128deg) translateX(25px) translateY(-60px) skewX(25deg) skewY(-6deg);
+		transform: scale(1.5) rotate(128deg) translateX(25px) translateY(-60px) skewX(25deg) skewY(-6deg);
+	}
+```
+* __Transitions__: Este atributo permite establecer la animación que se realizará al cambiar un determinado atributo del elemento, es decir 
+	
+	```CSS
+		.animacion{
+			-webkit-transition: all 1000ms ease-in-out;
+			-moz-transition: all 1000ms ease-in-out;
+			-ms-transition: all 1000ms ease-in-out;
+			-o-transition: all 1000ms ease-in-out;
+			transition: all 1000ms ease-in-out;
+		}
+	```
+
 * Animations
 * Key Frames
 * Gradientes
