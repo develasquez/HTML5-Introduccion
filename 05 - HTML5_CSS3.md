@@ -2,6 +2,7 @@
 
 CSS es el mecanismo mediante el cual añadimos etilos visuales al documento. La versión 3 incorpora cambios importantes que permiten aplicar estilos especiales, antes de css3 habia que utilizar imagenes o otros trucos para aplicar estos estilos.
 
+Te recomiendo que veas las guias de diseño de Google para el 2015 [aquí](https://www.google.com/design/spec/style/color.html)
 
 # Selectores
 
