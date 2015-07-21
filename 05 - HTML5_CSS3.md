@@ -239,7 +239,8 @@ __Padding__: El Acorchado o relleno del elememento es lo que separa el borde del
 		}
 	```
 
-
+### Compatibilidad de flex box navegadores. [ver en Can I Use](http://caniuse.com/#feat=flexbox) 
+_Chile 89.66%	+	5.01% (con prefijo)	=	94.67% _
 
 |Chrome		|Safari		|Firefox	|Opera			|IE				|Android	|iOS		|
 |---		|---		|---		|---			|---			|---		|---		|
@@ -307,10 +308,10 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 	}
 ```
 * __Transform__ : Este atributo es muy poderoso, ya que permite transformar en muchos aspectos un elemento, las posibilidades son:
-1. Scale: Permite cambiar la escala del elemento, Valores entre 0.0 , 1.0 (Valor 100%) o más.
-2. Rotate: Permite rotal el elemento en los 365 grados, valor de tipo __deg__.
-3. Translate: Permite trasladar en los cuatro sentidos se deben establecer 2 valores &lt;derecha&gt;px &lt;altura&gt;px 
-4. Skew: Permite establecer la inclinación del elemento expresada en grados con valor valor de tipo __deg__.
+	1. Scale: Permite cambiar la escala del elemento, Valores entre 0.0 , 1.0 (Valor 100%) o más.
+	2. Rotate: Permite rotal el elemento en los 365 grados, valor de tipo __deg__.
+	3. Translate: Permite trasladar en los cuatro sentidos se deben establecer 2 valores &lt;derecha&gt;px &lt;altura&gt;px 
+	4. Skew: Permite establecer la inclinación del elemento expresada en grados con valor valor de tipo __deg__.
 
 ```CSS
 	.zoom_1_5{
@@ -351,17 +352,18 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 ```
 * __Transitions__: Este atributo permite establecer la animación que se realizará al cambiar un determinado atributo del elemento, es decir, se establece un atributo (o todos usando _all_) el tiempo de duración de la animación y la cuarva de ejecución de la animación. 
 	
-	```CSS
-		.animacion{
-			-webkit-transition: width 1000ms ease-in-out;
-			-moz-transition: width 1000ms ease-in-out;
-			-ms-transition: width 1000ms ease-in-out;
-			-o-transition: width 1000ms ease-in-out;
-			transition: width 1000ms ease-in-out;
-		}
-	```
+```CSS
+	.animacion{
+		-webkit-transition: width 1000ms ease-in-out;
+		-moz-transition: width 1000ms ease-in-out;
+		-ms-transition: width 1000ms ease-in-out;
+		-o-transition: width 1000ms ease-in-out;
+		transition: width 1000ms ease-in-out;
+	}
+```
 
 |Animación|	Descripción|
+|---|---|
 |ease|	Valor por defecto. especifica una animación que inicia suvemente luego rapido y termina lentamente.(equivale a cubic-bezier(0.25,0.1,0.25,1))|
 |linear|	especifica una animación que conserva la misma velocidad de principio a fin (equivalen a cubic-bezier(0,0,1,1))|
 |ease-in|	especifica una animación que inicia lentamente (equivalent to cubic-bezier(0.42,0,1,1))|
@@ -371,9 +373,74 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 |initial|	Establece esta propiedad segun el valor por defecto para el navegador|
 |inherit|	Establece el valor segun lo tenga establecido si elemento padre|
 
+![Chrome Nimations](https://raw.githubusercontent.com/develasquez/HTML5-Introduccion/master/curva%20animaci%C3%B3n.png)
 
-* Animations
-* Key Frames
+
+* __Animation__: Permite asociar una animación a un elemento, 
+
+```CSS
+.selected{
+  position:absolute;
+  animation: aFull .263s easi-in; 
+  animation-iteration-count: 1;
+}
+
+@keyframes aFull {
+  0% {
+    left: 37.5%;
+    width:25%;
+  }
+  25% {
+    top: 37.5%;
+    left: 25%;
+    width:50%;
+    height:25%;
+
+  }
+  75% {
+    top: 37.5%;
+    left: 0;
+    width:100%;
+    height:75%;
+
+  }
+  100% {
+     top:0;
+    left: 0; 
+    width:100%;
+    height:100%;
+
+  }
+}
+
+```
+
+```CSS
+.loading{
+  margin: 0 auto;
+  z-index: 6000;
+  position: absolute;
+  top:0;
+  left:0;
+  -webkit-animation: spin 1s infinite linear;
+  -moz-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+  display:none;
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+
+  }
+}
+
+```
 * Gradientes
 * Font Faces
 * Media Querys
