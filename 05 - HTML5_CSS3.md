@@ -353,13 +353,25 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 * __Transitions__: Este atributo permite establecer la animación que se realizará al cambiar un determinado atributo del elemento, es decir, se establece un atributo (o todos usando _all_) el tiempo de duración de la animación y la cuarva de ejecución de la animación. 
 	
 ```CSS
-	.animacion{
-		-webkit-transition: width 1000ms ease-in-out;
-		-moz-transition: width 1000ms ease-in-out;
-		-ms-transition: width 1000ms ease-in-out;
-		-o-transition: width 1000ms ease-in-out;
-		transition: width 1000ms ease-in-out;
+	.element{
+		height: 150px;
+		background-color: #ABDCEF;
+			
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		width: auto;
+		max-width: 700px;
+		margin: 15% auto;
+		transition: transform .3s ease-out,  opacity .2s linear , rotateX .5s, scaleX .5s, scaleY .1s;
+		transform: translate(0,-100%) perspective( 300px ) rotateX(40deg) scaleX(.45) scaleY(0); 
 	}
+
+	.wow{
+  		transform: translate(0,0%) perspective( 600px ) rotateX(0deg) scaleX(1) scaleY(1);
+	}
+
 ```
 
 |Animación|	Descripción|
@@ -376,69 +388,76 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 ![Chrome Nimations](https://raw.githubusercontent.com/develasquez/HTML5-Introduccion/master/curva%20animaci%C3%B3n.png)
 
 
-* __Animation__: Permite asociar una animación a un elemento, 
+* __Animation__: Permite asociar una animación a un elemento, establecida mediante keyframes, los cuales establecen el estado del elemento dado un determinado porcentaje de avance de la animación.
 
 ```CSS
-.selected{
-  position:absolute;
-  animation: aFull .263s easi-in; 
-  animation-iteration-count: 1;
-}
+	.full {
+	  margin: 0 auto;
+	  position:absolute;
+	  animation: aFull .3s linear; 
+	  animation-iteration-count: 1;
+	  animation-fill-mode: forwards;
+	}
 
-@keyframes aFull {
-  0% {
-    left: 37.5%;
-    width:25%;
-  }
-  25% {
-    top: 37.5%;
-    left: 25%;
-    width:50%;
-    height:25%;
-
-  }
-  75% {
-    top: 37.5%;
-    left: 0;
-    width:100%;
-    height:75%;
-
-  }
-  100% {
-     top:0;
-    left: 0; 
-    width:100%;
-    height:100%;
-
-  }
-}
-
+	@keyframes aFull {
+	  0% {
+	  	top:25%;
+	    left: 37.5%;
+	    width:25%;
+	  }
+	  100% {
+	    top:0;
+	    left: 0; 
+	    width:100%;
+	    height:100%;
+	  }
+	}
 ```
 
 ```CSS
-.loading{
-  margin: 0 auto;
-  z-index: 6000;
-  position: absolute;
-  top:0;
-  left:0;
-  -webkit-animation: spin 1s infinite linear;
-  -moz-animation: spin 1s infinite linear;
-  -o-animation: spin 1s infinite linear;
-  animation: spin 1s infinite linear;
-  display:none;
-}
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+	.loader{
+		border: solid 6px #000;
+		border-top: solid 6px #fff;
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+  		animation: loader 4s infinite ease-in-out;
+	}
+		
+	@keyframes loader {
+		0% {
+		
+		    transform: rotate(0deg);
+		    border: solid 6px red;
+			border-top: solid 6px #fff;
+		}
+		20%{
+			border: solid 6px blue;
+			border-top: solid 6px #fff;
+			 transform: rotate(360deg);
+		}
+		40%{
+			border: solid 6px green;
+			border-top: solid 6px #fff;
+			 transform: rotate(720deg);	
+		}
+		60%{
+			border: solid 6px yellow;
+			border-top: solid 6px #fff;
+			 transform: rotate(1080deg);
+		}
+		80%{
+			border: solid 6px orange;
+			border-top: solid 6px #fff;
+			 transform: rotate(1440deg);
+		}
+		100% {
+			border: solid 6px grey;
+			border-top: solid 6px #fff;
+		    transform: rotate(1800deg);
 
-  }
-}
+		}
+	}
 
 ```
 * Gradientes

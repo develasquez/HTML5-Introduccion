@@ -212,13 +212,22 @@ Busca este editor, que te va a ayudar mucho , [Sublime Text 2](https://github.co
 	</article>
 ```
 
+## Canvas 
+
+Canvas es una de las nuevas etiquetas en HTML, posee la capacidad de manejar mapas de bits. 
+Sin evanrgo su uso es netamente a traves de Javascript es por eso que le daremos un vistazo el dia 3 del curso. :)
+
+```HTML
+	<canvas id="myCanvas"></canvas>
+```
+
 ## Inputs 
 
 * para esto hice una seccion especial , [Froms](https://github.com/develasquez/HTML5-Introduccion/blob/master/03%20-%20HTML5_Forms.md)
 
 ### Consideraciones Móviles
 	* Meta Tags (ya los vimos)
-	* No Usar Tablas (Sistemas de Grds, display Inline Block, como los machos)
+	* No Usar Tablas (Sistemas de Grds, display Inline Block, [flex box](https://github.com/develasquez/HTML5-Introduccion/blob/master/05%20-%20HTML5_CSS3.md#modelo-de-caja) , como los machos)
 	* Frameworks
 		+ [JQuery Mobile](https://jquerymobile.com/)
 		+ [Ionic](http://ionicframework.com/)

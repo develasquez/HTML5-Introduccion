@@ -18,6 +18,7 @@ Anyes de meter las manos en las nuevas funcionalidades, es necesario, repasar al
 
 1. Para asociar un archivo js a un documento Html, debemos utilizar la etiqueta &lt;script&gt; 
 2. 
+
 ## Nuevo en HTML 5
 
 Algunas de las nuevas funcionalidades de HTML 5 son:

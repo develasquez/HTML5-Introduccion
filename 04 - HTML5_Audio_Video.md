@@ -50,7 +50,7 @@ EL tag audio es utilizado para embeber contenido de tipo audio en un documento H
 * __loop__ : Establece que al llegar al final de la reproducción esta comenzara nuevamente desde el inicio.
 * __muted__ : Establece que el audio iniciara silenciado.
 * __played__ : Establece el rango de tiempo que se ha reproducido.
-* __preload__ : (none, metadata, auto, empty) Ermite establecer si el contenido se precargara desde que se despliega el documento.
+* __preload__ : (none, metadata, auto, empty) permite establecer si el contenido se precargara desde que se despliega el documento.
 * __src__ : La Url del audio embebido, Ojo con las politicas de acceso HTTP, este atributo es opcional cuando se encuentra la etiqueta &lt;source&gt;  
 
 * __volume__ : Permite obtener o estabelecer el volumen del audio en reproducción, se represent en un rango desde 0.0 (Silencio) hasta 1.0 (Maximo Volumen).
@@ -115,7 +115,7 @@ EL tag video es utilizado para embeber contenido de tipo audio en un documento H
 * __loop__ : Establece que al llegar al final de la reproducción esta comenzara nuevamente desde el inicio.
 * __muted__ : Establece que el audio iniciara silenciado.
 * __played__ : Establece el rango de tiempo que se ha reproducido.
-* __preload__ : (none, metadata, auto, empty) Ermite establecer si el contenido se precargara desde que se despliega el documento.
+* __preload__ : (none, metadata, auto, empty) permite establecer si el contenido se precargara desde que se despliega el documento.
 * __poster__: Url de la imagen que se desplegara antes que el usuario le de play, si no se establecera se vera el primer frame disponible.
 * __src__ : La Url del audio embebido, este atributo es opcional cuando se encuentra la etiqueta &lt;source&gt;  
 
@@ -157,3 +157,24 @@ Si el MIME type para el video no esta correctamente establecido en el servidor, 
 
 
 [Más sobre Video](http://www.html5rocks.com/en/tutorials/video/basics/)
+
+
+## Pruebas
+|Formato| Source |
+|---|---|
+|MP4|http://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_surround-fix.avi|
+|H.264|http://mirrorblender.top-ix.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_h264.mov|
+|OGG|http://mirrorblender.top-ix.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.ogg|
+|MSMP4|http://mirrorblender.top-ix.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.avi|
+
+```HTML
+	<video  controls autoplay>
+		<source src="big_buck_bunny_480p_stereo.avi"></source>
+		<source src="big_buck_bunny_480p_h264.mov"></source>
+		<source src="big_buck_bunny_480p_stereo.ogg"></source>
+		<source src="big_buck_bunny_480p_surround-fix.avi"></source>
+	</video>
+```
+
+
+descaragar desde la [web](http://download.blender.org/peach/bigbuckbunny_movies/) oficial.
