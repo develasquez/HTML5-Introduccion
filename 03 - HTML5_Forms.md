@@ -85,3 +85,4 @@ __ATRIBUTOS__
 
 > __required__ : Establece el campo como obligatorio
 
+![Inputs](https://raw.githubusercontent.com/develasquez/HTML5-Introduccion/master/Inputs.png)
