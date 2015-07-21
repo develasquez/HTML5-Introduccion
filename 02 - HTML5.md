@@ -162,6 +162,8 @@ Busca este editor, que te va a ayudar mucho , [Sublime Text 2](https://github.co
 
 ## HTML Semántico
 	
+
+
 * __body__: Es el Cuerpo de nuestro documento
 * __article__: Especifica contenido de texto es utilizado comunmente en:
 	+ Post en Foros
@@ -175,6 +177,10 @@ Busca este editor, que te va a ayudar mucho , [Sublime Text 2](https://github.co
 * __header__: Seccion desiganda a la cabecera del elemento padre.
 * __footer__: Seccion desiganda al pie del elemento padre.
 * __address__: Información del Autor o Propietario del Documento
+
+
+![HTML5 Semantico](https://raw.githubusercontent.com/develasquez/HTML5-Introduccion/master/Semantica.png)
+
 
 ```HTML
 	<article itemscope itemtype="http://schema.org/BlogPosting">
