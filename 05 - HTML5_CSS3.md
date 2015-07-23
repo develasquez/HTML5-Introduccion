@@ -462,22 +462,79 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 
 ```
 * Gradientes
-* Font Faces
-* Media Querys
-*  Mas populares
-* Portrait
-* Land Scape
-* 320
-* 480
-* 720
-* 1024
-* Print
-* Pre Procesadores Css
-* Grid Sistemas
-* Bootstrap
-* Ingrid
-* Otros 
 
+```CSS
+	.grad1{
+		background: red;
+  		background: linear-gradient(red, orange);
+	}
+```
+
+```CSS
+	.grad2{
+		background: #87e0fd; /* Old browsers */
+		background: -moz-linear-gradient(top,  #87e0fd 0%, #53cbf1 40%, #05abe0 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87e0fd), color-stop(40%,#53cbf1), color-stop(100%,#05abe0)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=0 ); /* IE6-9 */
+	}
+```
+
+```CSS
+	.grad3{
+		background: #6db3f2;
+		background: -moz-linear-gradient(top,  #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6db3f2), color-stop(50%,#54a3ee), color-stop(51%,#3690f0), color-stop(100%,#1e69de));
+		background: -webkit-linear-gradient(top,  #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%);
+		background: -o-linear-gradient(top,  #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%);
+		background: -ms-linear-gradient(top,  #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%);
+		background: linear-gradient(to bottom,  #6db3f2 0%,#54a3ee 50%,#3690f0 51%,#1e69de 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 );
+	}
+```
+
+
+* Font Faces
+
+```CSS
+	@font-face {
+	  font-family: 'FontAwesome';
+	  src: url('./fonts/fontawesome-webfont.eot?v=4.1.0');
+	  src: url('./fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('./fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('./fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('./fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+```
+* Media Querys
+
+```CSS
+	@media screen and (max-width: 320px) {
+
+	}
+	@media screen and (min-width: 320px) and (max-width: 640px){
+	
+	}
+	@media screen and (min-width: 640px) and (max-width: 768px){
+	   
+	}
+	@media screen and (min-width: 768px) {
+
+	}
+
+	@media all and (min-width: 1440px) {
+
+	}
+
+```
+
+* Grid Sistemas
+	* Bootstrap
+	* Ingrid
+	* Otros 
+* Pre Procesadores Css
 
 :valid
 :invalid
@@ -487,3 +544,231 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 :out-of-range
 :read-write
 :read-only
+
+
+
+Pruebas 
+
+	.contenedor>(header>(h1{Hoy}))+div>.pronostico>(.grados+.textPronostivo>h3)+.flex.detPronostico>(.maxima.flex(div*4)+.minima.flex(div*4))
+
+	.contenedor>(header>(h1{Por Días}))+ul.dias>(li.diaLista>((.detalle.dia{LUN $})+(.detalle.icono>img)+(.detalle>(.temp1{16°}+.temp2{1°}))+(.detalle.humedad{10%})))*5
+
+
+```JS
+	$(".contenedor").height(window.innerHeight);
+```
+
+```HTML
+	   <div class="contenedor hoy">
+       <header>
+           <h1>Hoy</h1>
+       </header>
+           <div > 
+               <div class="pronostico">
+                   <div class="grados">10°</div>
+                   <div class="textPronostivo">
+                       <h3>Muy Muboso</h3>
+                   </div>
+                   <div class=" detPronostico">
+                       <div class="maxima flex">
+                           <div class="temp">16°</div>
+                           <div class="enLetras">hoy <br> Parc. soleado </div>
+                           <div class="datos"> Sensación <br> térmica <br> Humedad <br> Visivilidad</div>
+                           <div class="datos"> 10° <br> <br> 62% <br> 9km </div>
+                       </div>
+                       <div class="minima flex">
+                           <div class="temp">1°</div>
+                           <div class="enLetras">Esta Noche  <br> Despejado   </div>
+                           <div class="datos">Barómetro <br> Viento <br> Indice UV </div>
+                           <div class="datos">1023 mb <br> 0 km/h <br> 2 (Mín)</div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+   		</div>
+        <div class="contenedor">
+            <header>
+                <h1>Por Días</h1>
+            </header>
+                <ul class="dias">
+                    <li class="diaLista flex">
+                        <div class="detalle">LUN 10</div>
+                        <div class="detalle">
+                            <img src="img/sunny.png" alt="Sol"></div>
+                        <div class="detalle">
+                            <div class="temp1">16°</div>
+                            <div class="temp2">1°</div>
+                        </div>
+                        <div class="detalle">10%</div>
+                    </li>
+                    <li class="diaLista flex">
+                        <div class="detalle">MAR 11</div>
+                        <div class="detalle">
+                            <img src="img/snow4.png" alt="Sol"></div>
+                        <div class="detalle">
+                            <div class="temp1">16°</div>
+                            <div class="temp2">1°</div>
+                        </div>
+                        <div class="detalle">10%</div>
+                    </li>
+                    <li class="diaLista flex">
+                        <div class="detalle">MIE 12</div>
+                        <div class="detalle">
+                            <img src="img/tstorm1.png" alt="Sol"></div>
+                        <div class="detalle">
+                            <div class="temp1">16°</div>
+                            <div class="temp2">1°</div>
+                        </div>
+                        <div class="detalle">10%</div>
+                    </li>
+                    <li class="diaLista flex">
+                        <div class="detalle">JUE 13</div>
+                        <div class="detalle">
+                            <img src="img/sleet.png" alt="Sol"></div>
+                        <div class="detalle">
+                            <div class="temp1">16°</div>
+                            <div class="temp2">1°</div>
+                        </div>
+                        <div class="detalle">10%</div>
+                    </li>
+                    <li class="diaLista flex">
+                        <div class="detalle">VIE 14</div>
+                        <div class="detalle">
+                            <img src="img/sunny.png" alt="Sol"></div>
+                        <div class="detalle">
+                            <div class="temp1">16°</div>
+                            <div class="temp2">1°</div>
+                        </div>
+                        <div class="detalle">10%</div>
+                    </li>
+                </ul>
+        </div>
+```
+
+```CSS	
+	html{
+	    height: 100%;
+	}
+	body{
+	    background: #000;
+	    background: linear-gradient(#000, #333);
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    height: 100%;
+	}
+
+	.contenedor{
+	    color: #fff;
+	    height: 100%;
+	    width: 50%;
+
+	}
+	header{
+	  padding:1rem;
+	  margin-bottom: 1rem;  
+	}
+	header h1{
+	    font-weight: 100;
+	    margin: 0 0 0 1rem;
+	}
+
+	/* Hoy */
+	.hoy{
+	    background-image: url("../img/Nublado_Sol.png");
+	    background-size: 100% 100%;
+	    font-weight:100;
+	    text-shadow:#000 1px 1px 5px;
+	}
+	.grados{
+	    margin-left:1rem;
+	    
+	    font-size:900%;
+	}
+	.detPronostico{
+	  margin:1rem;
+	}
+	.textPronostivo{
+	    margin-left: 1rem;
+	}
+	.pronostico{
+	  position: absolute;
+	  bottom: 0;
+	  margin-bottom: 2rem;
+	  width: 100%;
+	}
+	.temp{
+	    font-size:200%;
+	    width: 15%;
+	}
+	.enLetras{
+	    width:35%;
+	}
+	.datos{
+	    width:20%;
+	}
+
+	/* Por días */
+
+	.dias{
+	    list-style: none;
+	    padding: 0;
+	}
+	.diaLista{
+	    background-color: #242424;
+	    box-sizing: border-box;
+	    height: 6rem;
+	    margin: 1rem;
+	    border-radius: 8px;
+	    box-shadow: #555 1px 3px 12px;
+	}
+
+	.flex{
+	    display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-flex-flow: row wrap;
+	    justify-content: space-around;
+	}
+	.detalle{
+	    box-sizing: border-box;
+	    padding: 1.3rem 0 2rem 0;
+	    text-align: center;
+	    width: 25%;
+	    text-shadow: #555 1px 3px 12px;;
+
+	}
+
+
+	.detalle img{
+	    width: 75%;
+	    max-width: 72px;
+	}
+
+	.temp1{
+	    font-size: 1.3em;
+	}
+
+
+	.temp2{
+	    color: #A2A2A2;
+	}
+
+
+	/* Media Querys*/
+
+
+	@media screen and (max-width: 320px) {
+	   .contenedor {
+	        width : 100%;
+	   }
+	}
+
+	@media screen and (min-width: 320px) and (max-width: 640px){
+	      .contenedor {
+	        width : 100%;
+	   
+	        /* height: 100%; */
+	}
+```

@@ -133,7 +133,7 @@ Si el MIME type para el video no esta correctamente establecido en el servidor, 
 + WebM con VP9
 
 |Formato	|IE 9	|FF 4.0b11 	|Saf 5	|Chrome 9	|Opera 11	|
-|---		|---	|---		|---	|	---		|			|
+|---		|---	|---		|---	|	---		|---		|
 |H.264/MP4	|__Si__	|No			|__Si__	|	__Si__	|No			|
 |WebM		|No		|	__Si__	|	No	|	__Si__	|	__Si__	|
 |Ogg/Theora	|No		|	__Si__	|	No	|	__Si__	|	__Si__	|
