@@ -594,9 +594,9 @@ Lean [MDN - Media Query](https://developer.mozilla.org/es/docs/CSS/Media_queries
 
 Pruebas 
 
-	.contenedor>(header>(h1{Hoy}))+div>.pronostico>(.grados+.textPronostivo>h3)+.flex.detPronostico>(.maxima.flex(div*4)+.minima.flex(div*4))
+.contenedor>(header>(h1{Hoy}))+div>.pronostico>(.grados+.textPronostivo>h3)+.flex.detPronostico>(.maxima.flex(div*4)+.minima.flex(div*4))
 
-	.contenedor>(header>(h1{Por Días}))+ul.dias>(li.diaLista>((.detalle.dia{LUN $})+(.detalle.icono>img)+(.detalle>(.temp1{16°}+.temp2{1°}))+(.detalle.humedad{10%})))*5
+.contenedor>(header>(h1{Por Días}))+ul.dias>(li.diaLista>((.detalle.dia{LUN $})+(.detalle.icono>img)+(.detalle>(.temp1{16°}+.temp2{1°}))+(.detalle.humedad{10%})))*5
 
 
 ```JS
