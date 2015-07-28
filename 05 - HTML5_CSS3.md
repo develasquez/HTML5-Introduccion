@@ -289,7 +289,7 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 		font-weight: bold;
 	}
 ```
-* __Box-shadow__ : Esta propiedad permite establecer sombras a los elementos que utilizan el modelo de caja, el uso de este atrubuto consta de 4 valores.
+### __Box-shadow__ : Esta propiedad permite establecer sombras a los elementos que utilizan el modelo de caja, el uso de este atrubuto consta de 4 valores.
 1. Color
 2. Posición la derecha
 3. Posición a la izquierda
@@ -301,14 +301,14 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 	}
 ```
 
-* __Text-shadow__: Esta propiedad permite establecer sombra al texto contenido en el elemento, 
+### __Text-shadow__: Esta propiedad permite establecer sombra al texto contenido en el elemento, 
 
 ```CSS
 	h1.txtCool{
 		text-shadow: #04F 2px 2px 3px;
 	}
 ```
-* __Transform__ : Este atributo es muy poderoso, ya que permite transformar en muchos aspectos un elemento, las posibilidades son:
+### __Transform__ : Este atributo es muy poderoso, ya que permite transformar en muchos aspectos un elemento, las posibilidades son:
 	1. Scale: Permite cambiar la escala del elemento, Valores entre 0.0 , 1.0 (Valor 100%) o más.
 	2. Rotate: Permite rotal el elemento en los 365 grados, valor de tipo __deg__.
 	3. Translate: Permite trasladar en los cuatro sentidos se deben establecer 2 valores &lt;derecha&gt;px &lt;altura&gt;px 
@@ -351,7 +351,7 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 		transform: scale(1.5) rotate(128deg) translateX(25px) translateY(-60px) skewX(25deg) skewY(-6deg);
 	}
 ```
-* __Transitions__: Este atributo permite establecer la animación que se realizará al cambiar un determinado atributo del elemento, es decir, se establece un atributo (o todos usando _all_) el tiempo de duración de la animación y la cuarva de ejecución de la animación. 
+### __Transitions__: Este atributo permite establecer la animación que se realizará al cambiar un determinado atributo del elemento, es decir, se establece un atributo (o todos usando _all_) el tiempo de duración de la animación y la cuarva de ejecución de la animación. 
 	
 ```CSS
 	.element{
@@ -389,7 +389,7 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 ![Chrome Nimations](https://raw.githubusercontent.com/develasquez/HTML5-Introduccion/master/curva%20animaci%C3%B3n.png)
 
 
-* __Animation__: Permite asociar una animación a un elemento, establecida mediante keyframes, los cuales establecen el estado del elemento dado un determinado porcentaje de avance de la animación.
+### __Animation__: Permite asociar una animación a un elemento, establecida mediante keyframes, los cuales establecen el estado del elemento dado un determinado porcentaje de avance de la animación.
 
 ```CSS
 	.full {
@@ -461,7 +461,9 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 	}
 
 ```
-* Gradientes
+### __Gradientes__ : Permite crear degradados nativos sin la necesidad de utilizar imagenes.
+Les recomiendo utilizar [Gradiente Generator](http://www.colorzilla.com/gradient-editor/).
+
 
 ```CSS
 	.grad1{
@@ -497,7 +499,7 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 ```
 
 
-* Font Faces
+### __Font Faces__ : Esta funcionalidad es fantastica ya que permite utilizar las fuentes que queramos en nuestro proyecto sin la limitación de que el usuario la tenga que tener instalada en su sistema operativo. Hay muchas galerias de fuentes pero una de las mas conocidas es [Google Fonts](https://www.google.com/fonts).
 
 ```CSS
 	@font-face {
@@ -508,7 +510,22 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 	  font-style: normal;
 	}
 ```
-* Media Querys
+### __Media Querys__: En sistesis un media query es un IF en el CSS, lo que permite aplicar ciertos estilos cuendo se cuemple con el criterio.
+Lean [MDN - Media Query](https://developer.mozilla.org/es/docs/CSS/Media_queries)
+
+```HTML
+	<!-- CSS media query on a link element -->
+	<link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+	<!-- CSS media query within a style sheet -->
+	<style>
+	@media (max-width: 600px) {
+	  .facet_sidebar {
+	    display: none;
+	  }
+	}
+	</style>
+```
+
 
 ```CSS
 	@media screen and (max-width: 320px) {
@@ -530,21 +547,49 @@ Tambien esta propiedad nos sirve para crear elementos circulares.
 
 ```
 
-* Grid Sistemas
-	* Bootstrap
-	* Ingrid
-	* Otros 
-* Pre Procesadores Css
+### __Grid Sistemas__
+	* Como Funcionan [1](https://css-tricks.com/dont-overthink-it-grids/) - [2](http://www.sitepoint.com/understanding-css-grid-systems/)
+	* [Bootstrap](http://getbootstrap.com/css/#grid)
+	* [Ingrid](http://piira.se/projects/ingrid/)
+	* Otros [unsemantic](http://unsemantic.com/) [getskeleton](http://getskeleton.com/)
 
-:valid
-:invalid
-:optional
-:required
-:in-range
-:out-of-range
-:read-write
-:read-only
+### __Pre Procesadores Css__ : Se esta convietiendo en una tendencia creciente, permite crear CSS de forma más comoda, con menos codigo y más limpia.
 
+* __SaSS__ : [http://sass-lang.com/guide](http://sass-lang.com/guide)
+* __Stylus__: [https://github.com/stylus/stylus](https://github.com/stylus/stylus)
+* _Stylus_ + __Nib__: [http://nibstyl.us/docs/](http://nibstyl.us/docs/)
+
+```CSS
+	button
+  	  border-radius 1px 2px / 3px 4px
+
+	button
+	  border-radius 5px
+
+	button
+	  border-radius bottom 10px
+```
+
+```CSS
+	button {
+	  -webkit-border-radius: 1px 2px/3px 4px;
+	  -moz-border-radius: 1px 2px/3px 4px;
+	  border-radius: 1px 2px/3px 4px;
+	}
+	button {
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  border-radius: 5px;
+	}
+	button {
+	  -moz-border-radius-topleft: 10px;
+	  -webkit-border-top-left-radius: 10px;
+	  border-top-left-radius: 10px;
+	  -moz-border-radius-bottomright: 10px;
+	  -webkit-border-bottom-right-radius: 10px;
+	  border-bottom-right-radius: 10px;
+	}
+```
 
 
 Pruebas 

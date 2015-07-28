@@ -12,31 +12,55 @@ Sin embargo javascript dejo de ser un lenguaje 100% para la web, y debido a su v
 
 por lo tanto nos conviene prestarle mucha atención a Javascript, que es el segun Stack Overflow, el lenguaje más consultado durante el 2014.
 
-## Conceptos basicos Js.
-
-Anyes de meter las manos en las nuevas funcionalidades, es necesario, repasar algunos conceptos basicos de js.
-
-1. Para asociar un archivo js a un documento Html, debemos utilizar la etiqueta &lt;script&gt; 
-2. 
-
 ## Nuevo en HTML 5
 
 Algunas de las nuevas funcionalidades de HTML 5 son:
-
-
 
 ### Storage
 
 Antes de Html 5 la única forma que teniamos de almacenar infrormación en el navegador del cliente eran las tan odiadas cookies, las cuales son muy limitadas, ya que solo pueden almacenar 4kb de información cada una. 
 
 #### Key-value storage
-+ Session Storage
-+ Local Storage
+
+* __Session Storage__: Permite almacenar hasta 5mb de información en cada una, en session storage la información permanece mientras la ventana del navegador este abierta.
+
+```JS
+	sessionStorage.setItem("nombreUsuario","Felipe Velasquez")
+
+	var nombre = sessionStorage.getItem("nombreUsuario");
+
+```
+* __Local Storage__: Permite almacenar hasta 5mb en cada una, esta información permanecera en el tiempo, y no se borra al cerrar el navegador.
+
+```JS
+	localStorage.setItem("infoPermanente","AHFSJHVJSD2342343jbhj23423$$");
+
+	var Token = localStorage.getItem("infoPermanente");
+```
+La información contenida en este tipo de variables es de tipo string por lo tanto si quieres guardar Objetos Javascript (JSON), es necesario parsear los datos.
+
+```JS
+	var obj = {
+		nombre: "Felipe",
+		apellido: "Velasquez",
+		edad: 29
+	};
+	localStorage.setItem("datos",JSON.stringify(obj));
+
+	var obj = JSON.parse(localStorage.getItem("datos"));
+```
+
 #### Database storage
 + IndexedDB
 + Objectstore Blob support
 + Objectstore ArrayBuffer support
 + Web SQL Database : (_The Web SQL Database specification is no longer being updated and has been replaced by IndexedDB. Because at least 3 vendors have shipped implementations of this specification we still include it in this test_).
+
+```JS
+	var db= window.openDatabase("laBase", "1.0", "laBase", 5 * 1024 * 1024);
+	
+```
+
 
 Geolocation
 Device Orientation
