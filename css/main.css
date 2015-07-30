@@ -1,15 +1,127 @@
-.contenedor{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: space-around;
+#mapa_canvas{
+    width:50%;
+    height:50%;
+    }
+html{
+        height: 100%;
+    }
+body{
+    background: #000;
+    background: linear-gradient(#000, #333);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*Para usar el 100% del espacio */ 
+    height: 100%;
 }
-.feliz{
+.flex{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around;
+    }
 
-    border: solid 1px #000;
-    width: 20%;
-    min-width: 300px;
+.contenedor{
+    color: #fff;
+    height: 100%;
+    width: 50%;
 }
+header{
+    padding: 1rem;
+    margin-bottom: 1rem;  
+}
+header h1{
+    font-weight: 100;
+    margin: 0 0 0 1rem;
+}
+
+.hoy{
+    background-image: url("../img/Nublado_Sol.png");
+    background-size: 100% 100%;
+    font-weight:100;
+    text-shadow:#000 1px 1px 5px;
+}
+
+    .grados{
+        margin-left:1rem;
+
+        font-size:900%;
+    }
+    .detPronostico{
+      margin:1rem;
+    }
+    .textPronostivo{
+        margin-left: 1rem;
+    }
+    .pronostico{
+      position: relative;
+      bottom: 0;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+    .temp{
+        font-size:200%;
+        width: 15%;
+    }
+    .enLetras{
+        width:35%;
+    }
+    .datos{
+        width:20%;
+    }
+
+.dias{
+        list-style: none;
+        padding: 0;
+    }
+    .diaLista{
+        background-color: #242424;
+        box-sizing: border-box;
+        height: 6rem;
+        margin: 1rem;
+        border-radius: 8px;
+        box-shadow: #555 1px 3px 12px;
+    }
+
+    
+    .detalle{
+        box-sizing: border-box;
+        padding: 1.3rem 0 2rem 0;
+        text-align: center;
+        width: 25%;
+        text-shadow: #555 1px 3px 12px;
+
+    }
+
+
+    .detalle img{
+        width: 75%;
+        max-width: 72px;
+    }
+
+    .temp1{
+        font-size: 1.3em;
+    }
+
+
+    .temp2{
+        color: #A2A2A2;
+    }
+    
+    /* Media Querys*/
+
+
+    @media screen and (max-width: 320px) {
+       .contenedor {
+            width : 100%;
+       }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 640px){
+        .contenedor {
+            width : 100%;
+        }
+    }
+
+   
