@@ -187,12 +187,6 @@ Dentro de las posibilidades de HTML5 esta la interacción con el hardware, en es
     //var rotation = "rotate("+ tiltLR +"deg) rotate3d(0,1,0, "+ (tiltLR*-1)+"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
 ```
 
-
-
-Full screen support
-Web Notifications
-
-Access the webcam
 __Gamepad control__ : The Gamepad specification defines a low-level interface that represents gamepad devices.
 
 	function runAnimation()
@@ -230,13 +224,12 @@ __Service Workers__: This specification defines an API that allows Web applicati
 
 ## Comunicaciones
 
-Server-Sent Events
 
-__Beacon__:The Beacon specification defines an interface that web developers can use to asynchronously transfer small HTTP data from the User Agent to a web server.
+* __Beacon__:The Beacon specification defines an interface that web developers can use to asynchronously transfer small HTTP data from the User Agent to a web server.
 
 	navigator.sendBeacon("/log", analyticsData);
 
-XMLHttpRequest Level 2
+* __XMLHttpRequest Level 2__
 
 
 ```JS
@@ -293,16 +286,78 @@ XMLHttpRequest Level 2
 	}
 ```
 
+* __Full screen support__: Permite acceder a als funcionalidad de pantalla completa.
 
-#### WebSocket
-Basic socket communication
-ArrayBuffer and Blob
+```CSS
+	body:-webkit-full-screen {
+	  width: 100%;
+	  height: 100%;	
+	}
+```
 
+
+```JS
+	$("body").on("dblclick",function () {
+        var elem = $("body")[0];
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.msRequestFullscreen) {
+          elem.msRequestFullscreen();
+        } else if (elem.mozRequestFullScreen) {
+          elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) {
+          elem.webkitRequestFullscreen();
+        }
+    })
+```
+
+
+* __Web Notifications__: Permite crear notificaciones que se visualizaran fuera del navegador.
+
+```JS
+	if (Notification.permission !== 'denied') {
+        Notification.requestPermission(function (permission) {
+            if (permission === "granted") {
+                var notification = new Notification("23°", {body:"El pronistico para hoy es Soleado",icon:"img/despejado.png"});
+            }
+        });
+    }
+```
+
+
+
+* __Access the webcam__
+
+```HTML
+	<video src="" id="videoElement"></video>
+```
+
+```JS
+	var video = document.querySelector("#videoElement");
+ 
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+     
+    if (navigator.getUserMedia) {       
+        navigator.getUserMedia({video: true},
+                function(stream) {
+                    video.src = window.URL.createObjectURL(stream);
+                }, 
+                function(){
+                }
+        );
+    }
+
+ ``` 
+
+### WebSocket
+ 
+* Basic socket communication.
+	[Node.JS](https://nodejs.org/)
 
 
 ### User interaction
 
-#### Drag and drop
+### Drag and drop
 
 * draggable attribute
 * dropzone attribute

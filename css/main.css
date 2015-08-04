@@ -1,7 +1,21 @@
+
 #mapa_canvas{
     width:50%;
     height:50%;
     }
+    
+.logo {
+      width:275px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      padding: 15px;
+    }
+    
+.container {
+      -webkit-perspective: 300; perspective: 300;
+    }
+
 html{
         height: 100%;
     }
